@@ -13,18 +13,18 @@ namespace UILibrary.UI
 	{
 		public static Asset<Texture2D> DragTexture { get; internal set; } = null!;
 		
-		public string UniqueName { get; init; }
+		public string UniqueName { get; }
 
 		public Vector2 Offset { get; private set; }
-		public bool Draggable { get; init; }
+		public bool Draggable { get; set; }
 		public bool Dragging { get; private set; }
 
-		public bool ResizeableX { get; init; }
-		public bool ResizeableY { get; init; }
+		public bool ResizeableX { get; set; }
+		public bool ResizeableY { get; set; }
 		public bool Resizeable => ResizeableX || ResizeableY;
 		public bool Resizeing { get; private set; }
 
-		public UIConfig? Config { get; init; }
+		public UIConfig? Config { get; }
 
 		//private int minX, minY, maxX, maxY;
 		public List<UIElement> AdditionalDragTargets { get; init; } = new();

@@ -15,11 +15,11 @@ namespace UILibrary.UI
 		public string UniqueName { get; }
 
 		public Vector2 Offset { get; private set; }
-		public bool Draggable { get; init; }
+		public bool Draggable { get; set; }
 		public bool Dragging { get; private set; }
 
-		public bool ResizeableX { get; init; }
-		public bool ResizeableY { get; init; }
+		public bool ResizeableX { get; set; }
+		public bool ResizeableY { get; set; }
 		public bool Resizeable => ResizeableX || ResizeableY;
 		public bool Resizeing { get; private set; }
 
