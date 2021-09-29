@@ -1,0 +1,4 @@
+displayName = UI Library
+author = Exterminator
+version = 0.1
+includeSource = true
